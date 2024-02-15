@@ -8,7 +8,6 @@ public class ObjectMove : MonoBehaviour
     [SerializeField] public float speedChange = 0.01f;
     [SerializeField] public int ScoreValue = 1;
     [SerializeField] public int HpValue = 0;
-    [SerializeField] public bool AlreadyAct = false;
 
 
     public GameObject BoltModelDown;
@@ -28,22 +27,14 @@ public class ObjectMove : MonoBehaviour
 
     public void zabivanie()  //zabivanie 
     {
-        if (AlreadyAct == false)
-        {
             BoltModelUp.SetActive(false);
             BoltModelDown.SetActive(true);
-            AlreadyAct = true;
-        }
     }
 
     public void BoltCrash() //boltCrushing
     {
-        if (AlreadyAct == false)
-        {
-            BoltModelUp.SetActive(false);
-            BoltModelBroke.SetActive(true);
-            AlreadyAct = true;
-        }
+        BoltModelUp.SetActive(false);
+        BoltModelBroke.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other) //bolt destruct

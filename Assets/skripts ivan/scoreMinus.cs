@@ -13,6 +13,5 @@ public class scoreMinus : MonoBehaviour
             ScoreM.scoreMinuss = 1;
             other.gameObject.tag = "boltDown";
         }
-
     }
 }

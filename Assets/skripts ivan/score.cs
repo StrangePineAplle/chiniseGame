@@ -15,9 +15,10 @@ public class score : MonoBehaviour
             other.gameObject.tag = "boltChockUp";
         }
 
-        if (other.gameObject.CompareTag("IntrestingObject") && (other.gameObject.GetComponent<ObjectMove>().AlreadyAct == false))
+        if (other.gameObject.CompareTag("IntrestingObject"))
         {
             ScoreM.Event(other.gameObject.GetComponent<ObjectMove>().ScoreValue, other.gameObject.GetComponent<ObjectMove>().HpValue);
+            other.gameObject.tag = "Untagged";
         }
     }
 }

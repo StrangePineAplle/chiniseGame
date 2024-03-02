@@ -11,12 +11,12 @@ public class HammerColiderBoltPunching : MonoBehaviour
 
         if (ObjectNeedDestruction == 1)
         {
-            collision.gameObject.GetComponent<ObjectMove>().zabivanie();
+            collision.gameObject.GetComponent<ObjectMove>().zabivanie(); //юнити не нравится что указываем на пустой объект
         }
         else if(ObjectNeedDestruction == 2)
         {
             collision.gameObject.GetComponent<ObjectMove>().BoltCrash();
-            collision.gameObject.tag = "Untagged";
+            collision.gameObject.tag = "Untagged";  //teg error
             ObjectNeedDestruction = 1;
         }
         

@@ -18,7 +18,7 @@ public class score : MonoBehaviour
         if (other.gameObject.CompareTag("IntrestingObject"))
         {
             ScoreM.Event(other.gameObject.GetComponent<ObjectMove>().ScoreValue, other.gameObject.GetComponent<ObjectMove>().HpValue);
-            other.gameObject.tag = "Untagged";
+            other.gameObject.tag = "Untagged";  //teg error
         }
     }
 }

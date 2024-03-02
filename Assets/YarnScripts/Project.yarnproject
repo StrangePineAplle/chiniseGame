@@ -1,0 +1,16 @@
+{
+  "projectFileVersion": 2,
+  "sourceFiles": [
+    "**/*.yarn"
+  ],
+  "excludeFiles": [
+    "**/*~/*"
+  ],
+  "localisation": {
+    "ru": {
+      "assets": "..\\sounds\\testSounds"
+    }
+  },
+  "baseLanguage": "ru",
+  "compilerOptions": {}
+}
